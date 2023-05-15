@@ -13,13 +13,15 @@ public class Main {
     Kogtevran padmaPatil = new Kogtevran("Padma Patil", 80,66,73,90,61,32);
     Kogtevran marcusBelby = new Kogtevran("Marcus Belby",81,12,53,63,99,9);
 
-
     System.out.println(harryPotter.calculateSecondScore());
 
-    hermioneGranger.calculateOneScore(zhouChang);
-    hermioneGranger.calculateSecondScore(zhouChang);
-    hermioneGranger.compere(harryPotter);
+    grahamMontagu.bestCharacterInGroup(gregoryGoyle);
+    grahamMontagu.bestCharacterInGroup(gregoryGoyle);
 
+    hermioneGranger.compere(harryPotter);
+    hermioneGranger.compere(grahamMontagu);
+
+    System.out.println(harryPotter);
     }
 
 }

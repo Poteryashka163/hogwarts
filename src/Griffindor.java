@@ -15,17 +15,6 @@ class Griffindor extends Hogwarts {
         return courage;
     }
 
-    public void setNobility(int nobility) {
-        this.nobility = nobility;
-    }
-
-    public void setHonor(int honor) {
-        this.honor = honor;
-    }
-
-    public void setCourage(int courage) {
-        this.courage = courage;
-    }
 
     public Griffindor(String character, int magikPower, int transgessiayDistance, int nobility, int honor, int courage) {
         super(magikPower, transgessiayDistance,character);
@@ -36,7 +25,7 @@ class Griffindor extends Hogwarts {
 
     @Override
     public String toString() {
-        return super.toString() + "Griffindor{" +
+        return super.toString() + " Griffindor {"+
                 "nobility=" + nobility +
                 ", honor=" + honor +
                 ", courage=" + courage +

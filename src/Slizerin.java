@@ -25,26 +25,6 @@ class Slizerin extends Hogwarts {
         return lustForPower;
     }
 
-    public void setCunning(int cunning) {
-        this.cunning = cunning;
-    }
-
-    public void setDetermination(int determination) {
-        this.determination = determination;
-    }
-
-    public void setAmbition(int ambition) {
-        this.ambition = ambition;
-    }
-
-    public void setResourcefulness(int resourcefulness) {
-        this.resourcefulness = resourcefulness;
-    }
-
-    public void setLustForPower(int lustForPower) {
-        this.lustForPower = lustForPower;
-    }
-
     public Slizerin(String character, int magikPower, int transgessiayDistance, int cunning, int determination, int ambition, int resourcefulness, int lustForPower) {
         super(magikPower, transgessiayDistance,character);
         this.cunning = cunning;

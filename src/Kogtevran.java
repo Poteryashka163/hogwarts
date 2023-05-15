@@ -20,22 +20,6 @@ class Kogtevran extends Hogwarts {
         return creativity;
     }
 
-    public void setIntelligence(int intelligence) {
-        this.intelligence = intelligence;
-    }
-
-    public void setWisdom(int wisdom) {
-        this.wisdom = wisdom;
-    }
-
-    public void setWit(int wit) {
-        this.wit = wit;
-    }
-
-    public void setCreativity(int creativity) {
-        this.creativity = creativity;
-    }
-
     public Kogtevran(String character, int magikPower, int transgessiayDistance, int intelligence, int wisdom, int wit, int creativity) {
         super(magikPower, transgessiayDistance,character);
         this.intelligence = intelligence;

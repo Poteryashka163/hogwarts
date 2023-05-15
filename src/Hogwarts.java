@@ -17,18 +17,6 @@ public abstract class Hogwarts {
         return transgessiayDistance;
     }
 
-    public void setCharacter(String character) {
-        this.character = character;
-    }
-
-    public void setMagikPower(int magikPower) {
-        this.magikPower = magikPower;
-    }
-
-    public void setTransgessiayDistance(int transgessiayDistance) {
-        this.transgessiayDistance = transgessiayDistance;
-    }
-
     public Hogwarts(int magikPower, int transgessiayDistance, String character) {
         this.magikPower = magikPower;
         this.transgessiayDistance = transgessiayDistance;
@@ -40,7 +28,7 @@ public abstract class Hogwarts {
         return "Hogwarts{" +
                 "magikPower=" + magikPower +
                 ", transgessiayDistance=" + transgessiayDistance +
-                '}';
+                '}'+ character;
     }
     public int calculateOneScore(){
         return magikPower + transgessiayDistance;
