@@ -38,8 +38,8 @@ class Griffindor extends Hogwarts {
     }
 
     @Override
-    public void bestCharacterInGroup(Hogwarts first, Hogwarts second) {
-        System.out.println(String.format("%s лучший в Гриффиндорец чем ", first,second));
+    public void bestCharacterInGroup(String first, String second) {
+        System.out.println(String.format("%s лучший в Гриффиндоре чем %s", first,second));
     }
 
 

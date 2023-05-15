@@ -50,8 +50,8 @@ class Slizerin extends Hogwarts {
         return this.ambition + this.determination + this.cunning + this.resourcefulness + this.lustForPower;
     }
     @Override
-    public void bestCharacterInGroup(Hogwarts first, Hogwarts second) {
-        System.out.println(String.format("%s лучший в Слизеринец чем ", first,second));
+    public void bestCharacterInGroup(String first, String second) {
+        System.out.println(String.format("%s лучший в Слизерине чем %s", first,second));
     }
 }
 

@@ -37,8 +37,8 @@ class Puffendui extends Hogwarts {
         return this.diligence+this.loyalty+this.honor;
     }
     @Override
-    public void bestCharacterInGroup(Hogwarts first, Hogwarts second) {
-        System.out.println(String.format("%s лучший в Пуфендуец чем ", first,second));
+    public void bestCharacterInGroup(String first, String second) {
+        System.out.println(String.format("%s лучший в Пуфендуе чем %s", first,second));
     }
 }
 

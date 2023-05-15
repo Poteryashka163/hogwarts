@@ -43,8 +43,8 @@ class Kogtevran extends Hogwarts {
         return this.creativity + this.intelligence + this.wisdom + this.wit;
     }
     @Override
-    public void bestCharacterInGroup(Hogwarts first, Hogwarts second) {
-        System.out.println(String.format("%s лучший в Когневарец чем ", first,second));
+    public void bestCharacterInGroup(String first, String second) {
+        System.out.println(String.format("%s лучший в Когневаре чем %s", first,second));
     }
 }
 

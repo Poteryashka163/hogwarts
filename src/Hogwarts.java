@@ -35,10 +35,10 @@ public abstract class Hogwarts {
     }
     public abstract int calculateSecondScore();
 
-    public abstract void bestCharacterInGroup(Hogwarts first, Hogwarts second);
+    public abstract void bestCharacterInGroup(String first, String second);
 
 
-    public void compareOne(Hogwarts hogwarts){
+    private void compareOne(Hogwarts hogwarts){
         int oneScore = this.calculateOneScore();
         int secondScore = hogwarts.calculateOneScore();
         if (oneScore > secondScore) {
@@ -50,13 +50,13 @@ public abstract class Hogwarts {
         }
 
     }
-    public void compareSecond(Hogwarts hogwarts) {
+    private void compareSecond(Hogwarts hogwarts) {
         int oneScore = this.calculateOneScore() + this.calculateSecondScore();
         int secondScore = hogwarts.calculateOneScore() + hogwarts.calculateSecondScore();
         if (oneScore > secondScore) {
-            System.out.println(String.format("%s сильнее чем %s", this.character, hogwarts.getCharacter()));
+            bestCharacterInGroup(this.getCharacter(), hogwarts.getCharacter());
         } else if (oneScore < secondScore) {
-            System.out.println(String.format("%s сильнее чем %s", hogwarts.getCharacter(), this.character));
+            bestCharacterInGroup(hogwarts.getCharacter(),this.getCharacter());
         } else {
             System.out.println("Паритет силы.");
 
@@ -64,9 +64,9 @@ public abstract class Hogwarts {
     }
     public void compere(Hogwarts hogwarts){
         if (this.getClass().equals(hogwarts.getClass())){
-            compareOne(hogwarts);
-        }else {
             compareSecond(hogwarts);
+        }else {
+            compareOne(hogwarts);
         }
     }
 
